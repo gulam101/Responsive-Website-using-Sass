@@ -1,0 +1,43 @@
+$primary-color: #444;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $primary-color;
+    color: white;
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+//Headings
+h1, 
+h2, 
+h3 {
+    margin: 0;
+    font-weight: 400;
+
+    //nests our heading and allows us to modify the content without having to individually
+    //modify the h1,h2,h3 in the CSS
+    &.lg-heading {
+        font-size: 6rem;
+    }
+
+    // pushes the icons down
+    &.sm-heading {
+        margin-bottom: 2rem;
+        padding: 0.2rem 1rem;
+        // creates a background colour that accepts two paramaters and allow it to be darker or lighter
+        background-color: rgba(lighten($primary-color, 2.5), 0.5);
+    }
+}
+//End of Headings
+
+// Note: Make sure to add animation with hover affect!
+a {
+    color: white;
+    text-decoration: none;
+}

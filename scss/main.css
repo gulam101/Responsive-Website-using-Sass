@@ -1,0 +1,40 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #444;
+  color: white;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+}
+
+h1.lg-heading,
+h2.lg-heading,
+h3.lg-heading {
+  font-size: 6rem;
+}
+
+h1.sm-heading,
+h2.sm-heading,
+h3.sm-heading {
+  margin-bottom: 2rem;
+  padding: 0.2rem 1rem;
+  background-color: rgba(74, 74, 74, 0.5);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */
