@@ -16,10 +16,6 @@
         @include easeOut;
     }
 
-    // .btn-line:hover {
-    //     background-color: red;
-    // }
-
     // Rotate Into X With menu Lines
     &.close {
         transform: rotate(180deg);
@@ -40,5 +36,37 @@
             transform: rotate(135deg) translate(-6px, 6px);
            }
         }
+    }
+}
+
+// Menu Overlay
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.5;
+    visibility: hidden;
+
+    &.show {
+        visibility: visible;
+    }
+
+    // easier way to add into our menu without creating classes
+    &-branding,
+    &-nav {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        float: right;
+        width: 50%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    &-nav {
+        margin: 0;
+        padding: 0;
+        background: darken($primary-color, 5);
     }
 }
