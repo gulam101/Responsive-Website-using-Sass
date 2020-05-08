@@ -1,6 +1,6 @@
 // ONLY USED FOR OUR MENU
 
-.MENU-BTN {
+.menu-btn {
     position: absolute;
     z-index: 3;
     right: 35px;
@@ -19,4 +19,30 @@
     // .btn-line:hover {
     //     background-color: red;
     // }
+
+    // Rotate Into X With menu Lines
+    &.close {
+        transform: rotate(180deg);
+
+    .btn-line {
+        // Line 1 - Rotate
+        &:nth-child(1) {
+            background-color: red;
+        }
+
+        // Line 2 - Hide
+
+        // Line 3 - Rotate
+    }
+}
+
+    // For a perfect X do this:
+    //   &:nth-child(3) {
+    //     transform: rotate(-45deg) translate(6.5px, -6.5px);
+    //   }
+
+    // &:nth-child(3) {
+    //     transform: rotate(135deg) translate(-6px, 6px);
+    //   }
+
 }
