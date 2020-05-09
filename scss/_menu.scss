@@ -44,7 +44,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.9;
     visibility: hidden;
 
     &.show {
@@ -62,11 +62,11 @@
         width: 50%;
         height: 100vh;
         overflow: hidden;
+        background: darken($primary-color, 5);
     }
 
     &-nav {
         margin: 0;
         padding: 0;
-        background: darken($primary-color, 5);
     }
 }

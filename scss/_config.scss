@@ -1,4 +1,4 @@
-// ONLY USED TO STORE OUR VARIABLES AND IF STATEMENTS
+// ONLY USED TO STORE OUR VARIABLES
 
 // Declares our variables
 $primary-color: #444;
@@ -6,6 +6,7 @@ $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url(../dist/img/background.jpg);
 $background-opacity: 0.5;
+$test-colour: red;
 
 // Creates a function
 @mixin easeOut {
