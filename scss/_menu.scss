@@ -62,11 +62,17 @@
         width: 50%;
         height: 100vh;
         overflow: hidden;
-        background: darken($primary-color, 5);
-    }
-
-    &-nav {
+        // You don't need to create a nav seperatly below, you can add the properties here
+        background: darken($primary-color, 1);
         margin: 0;
         padding: 0;
+        list-style: none;
+        transform: translate3d(0, -100%, 0);
+        @include easeOut;
+
+        &.show {
+            // Slide in from top
+            transform: translate3d(0, 0, 0);
+        }
     }
 }

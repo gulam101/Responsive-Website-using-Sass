@@ -66,12 +66,19 @@
   width: 50%;
   height: 100vh;
   overflow: hidden;
-  background: #373737;
-}
-
-.menu-nav {
+  background: #414141;
   margin: 0;
   padding: 0;
+  list-style: none;
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.menu-branding.show, .menu-nav.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 * {
