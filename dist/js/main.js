@@ -41,4 +41,5 @@ function toggleMenu() {
     //     showMenu = !showMenu;
     // }
 
+    // Wrap every letter in a span
 }

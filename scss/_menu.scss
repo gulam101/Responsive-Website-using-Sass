@@ -58,6 +58,8 @@
         flex-flow: column wrap;
         align-items: center;
         justify-content: center;
+        // Fixes the nav not being aligned properly
+        text-align: center;
         float: right;
         width: 50%;
         height: 100vh;
@@ -75,4 +77,5 @@
             transform: translate3d(0, 0, 0);
         }
     }
+
 }

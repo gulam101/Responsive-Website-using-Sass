@@ -18,39 +18,82 @@
 
         <nav class="menu">
             <div class="menu-branding">
+                <div class="portrait"></div>
                 <div class="ul-menu-nav">
-                    <li class="nav-item">
-                        <a href="/" class="nav-link">
-                        Home
-                        </a>
-                    </li>
-                <div class="ul-menu-nav">
-                    <li class="nav-item">
-                        <a href="/about.html" class="nav-link">
-                        About
-                        </a>
-                    </li>
-                <div class="ul-menu-nav">
-                    <li class="nav-item">
-                        <a href="/work.html" class="nav-link">
-                        My Work
-                        </a>
-                    </li>
-                <div class="ul-menu-nav">
-                    <li class="nav-item">
-                        <a href="/contact.html" class="nav-link">
-                        Contact
-                        </a>
-                    </li>
+            </div>
+                <li class="nav-item">
+                    <a href="/" class="nav-link">
+                    Home
+                    </a>
+                </li>
+            <div class="ul-menu-nav">
+                <li class="nav-item">
+                    <a href="/about.html" class="nav-link">
+                    About
+                    </a>
+                </li>
+            <div class="ul-menu-nav">
+                <li class="nav-item">
+                    <a href="/work.html" class="nav-link">
+                    My Work
+                    </a>
+                </li>
+            <div class="ul-menu-nav">
+                <li class="nav-item">
+                    <a href="/contact.html" class="nav-link">
+                    Contact
+                    </a>
+                </li>
                 </div>
             </div>
         </nav>
     </header>
 
     <main id="home">
-        <h1 class="lg-heading">
-            John <span class="secondary-text">Doe</span>
+        <h1 class="ml14">
+              
+            </span>
+          </h1>
+          
+          </script>
+        <h1 class="ml14">
+            <span class="text-wrapper"></span>
+            <span class="letters">John Doe</span>
+            <span class="line"></span>
         </h1>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script>
+        var textWrapper = document.querySelector('.ml14 .letters');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({loop: true})
+        .add({
+        targets: '.ml14 .line',
+        scaleX: [0,1],
+        opacity: [0.5,1],
+        easing: "easeInOutExpo",
+        duration: 900
+        }).add({
+        targets: '.ml14 .letter',
+        opacity: [0,1],
+        translateX: [40,0],
+        translateZ: 0,
+        scaleX: [0.3, 1],
+        easing: "easeOutExpo",
+        duration: 800,
+        offset: '-=600',
+        delay: (el, i) => 150 + 25 * i
+        }).add({
+        targets: '.ml14',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+        });
+
+        </script>
+
         <h2 class="sm-heading">
             Web Developer, Programmer, Designer & Entrepreneur
         </h2>
