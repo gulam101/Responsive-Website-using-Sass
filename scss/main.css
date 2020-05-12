@@ -97,6 +97,7 @@ body {
 }
 
 body#bg-img {
+  background-color: #f8f8ff;
   background: url(../dist/img/background.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -114,7 +115,7 @@ body#bg-img .overlay {
 
 .ml14 {
   font-weight: 200;
-  font-size: 3.2em;
+  font-size: 70px;
 }
 
 .ml14 .text-wrapper {
@@ -140,6 +141,47 @@ body#bg-img .overlay {
 .ml14 .letter {
   display: inline-block;
   line-height: 1em;
+}
+
+.projects-title {
+  text-align: center;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  font-size: 60px;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container > p {
+  text-align: center;
+  font-size: 40px;
+}
+
+footer {
+  background-color: black;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+}
+
+footer > .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-container > div {
+  text-align: center;
+  font-size: 16px;
+}
+
+.icons {
+  text-align: center;
 }
 
 h1,

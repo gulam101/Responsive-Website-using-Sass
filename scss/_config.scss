@@ -6,7 +6,7 @@ $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url(../dist/img/background.jpg);
 $background-opacity: 0.5;
-$test-colour: red;
+$default-background: #f8f8ff;
 
 // Creates a function
 @mixin easeOut {
@@ -16,6 +16,8 @@ $test-colour: red;
 @mixin background {
     @if $show-home-image {
         &#bg-img {
+            // If background images doesn't load this color would be default
+            background-color: $default-background;
             background: $home-image;
             background-attachment: fixed;
             background-size: cover;
