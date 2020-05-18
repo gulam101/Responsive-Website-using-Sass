@@ -146,11 +146,39 @@ header {
 }
 
 .text-secondary {
-  color: #eece1a;
+  color: black;
 }
 
 .fa {
   color: black;
+}
+
+.fa-twitter {
+  color: #4682B4;
+}
+
+.fa-twitter:hover {
+  color: #1DA1F2;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-facebook:hover {
+  color: #3b5998;
+}
+
+.fa-linkedin {
+  color: white;
+}
+
+.fa-linkedin:hover {
+  color: #0e76a8;
+}
+
+.fa-github:hover {
+  color: white;
 }
 
 main {
@@ -166,10 +194,6 @@ main .icons a {
   padding: 0.4rem;
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
-}
-
-main .icons a:hover {
-  color: #eece1a;
 }
 
 main#home {
@@ -195,7 +219,7 @@ main#home h1 {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: #eece1a 3px solid;
+  border: red 3px solid;
 }
 
 .about-info .bio {
@@ -227,7 +251,7 @@ main#home h1 {
 .about-info .job {
   background: #515151;
   padding: 0.5rem;
-  border-bottom: #eece1a 5px solid;
+  border-bottom: red 5px solid;
 }
 
 .projects {
@@ -245,7 +269,7 @@ main#home h1 {
 
 .projects img:hover {
   opacity: 0.5;
-  border-color: #eece1a;
+  border-color: red;
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
@@ -274,16 +298,6 @@ main#home h1 {
   transition: all 0.5s ease-in;
 }
 
-.boxes div:hover {
-  padding: 0.5rem 1.5rem;
-  background: #eece1a;
-  color: set-text-color(#eece1a);
-}
-
-.boxes div:hover span {
-  color: set-text-color(#eece1a);
-}
-
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
@@ -292,8 +306,8 @@ main#home h1 {
 }
 
 .btn:hover, .btn-dark:hover, .btn-light:hover {
-  background: #eece1a;
-  color: set-text-color(#eece1a);
+  background: red;
+  color: set-text-color(red);
 }
 
 .btn-dark {

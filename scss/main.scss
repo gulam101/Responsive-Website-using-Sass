@@ -54,20 +54,40 @@ header {
 
 // Make sure to add animation to the text here
 .text-secondary {
-  color: $secondary-color;
+  color: black;
 }
 
 .fa {
   color: black;
 }
 
-// .fa-twitter {
-//   // color: 
-// }
+.fa-twitter {
+  color: $twitter-defult;
+}
 
-// .fa-twitter:hover {
+ .fa-twitter:hover {
+  color: $twitter-hover;
+}
 
-// }
+.fa-facebook {
+  color: $facebook-default;
+}
+
+.fa-facebook:hover {
+  color: $facebook-hover;
+}
+
+.fa-linkedin {
+  color: $linkedIn-default;
+}
+
+.fa-linkedin:hover {
+  color: $linkedIn-hover;
+}
+
+.fa-github:hover {
+  color: white;
+}
 
 main {
   padding: 4rem;
@@ -82,10 +102,6 @@ main {
       padding: 0.4rem;
       // calls our function using the @include
       @include easeOut;
-
-      &:hover {
-        color: $secondary-color;
-      }
     }
   }
 
@@ -109,7 +125,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: $secondary-color 3px solid;
+    border: red 3px solid;
   }
 
   .bio {
@@ -132,7 +148,7 @@ main {
   .job {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
+    border-bottom: red 5px solid;
   }
 }
 
@@ -148,7 +164,7 @@ main {
 
     &:hover {
       opacity: 0.5;
-      border-color: $secondary-color;
+      border-color: red;
       @include easeOut;
     }
   }
@@ -169,14 +185,14 @@ main {
     margin-bottom: 3rem;
     @include easeOut;
 
-    &:hover {
-      padding: 0.5rem 1.5rem;
-      background: $secondary-color;
-      color: set-text-color($secondary-color);
-      span {
-        color: set-text-color($secondary-color);
-      }
-    }
+    // &:hover {
+    //   padding: 0.5rem 1.5rem;
+    //   background: $secondary-color;
+    //   color: set-text-color($secondary-color);
+    //   span {
+    //     color: set-text-color($secondary-color);
+    //   }
+    // }
   }
 }
 
@@ -187,8 +203,8 @@ main {
   border: 0;
   margin-bottom: 0.3rem;
   &:hover {
-    background: $secondary-color;
-    color: set-text-color($secondary-color);
+    background: red;
+    color: set-text-color(red);
   }
 }
 

@@ -2,7 +2,6 @@
 
 // Declares our variables
 $primary-color: #444;
-$secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url(../dist/img/background.jpg);
 $background-opacity: 0.5;
@@ -16,7 +15,17 @@ $twitter-defult: #4682B4;
 $twitter-hover: #1DA1F2;
 
 // Facebook Default Colour
+$facebook-default: #3b5998;
 // Facebook Hover Animation
+$facebook-hover:  #3b5998; // temp
+
+// LinkedIn Default Colour
+$linkedIn-default: white;
+// LinkedIn Hover Animation
+$linkedIn-hover:  #0e76a8;
+
+// GitHub Default Colour
+// GitHub Hover Animation
 
 // Creates a function
 @mixin easeOut {
