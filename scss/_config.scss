@@ -8,6 +8,16 @@ $home-image: url(../dist/img/background.jpg);
 $background-opacity: 0.5;
 $default-background: #f8f8ff;
 
+// Icons Aniamtion
+
+// Twitter Default Colour
+$twitter-defult: #4682B4;
+// Twitter Hover Animation
+$twitter-hover: #1DA1F2;
+
+// Facebook Default Colour
+// Facebook Hover Animation
+
 // Creates a function
 @mixin easeOut {
     transition: all 0.5s ease-in;
