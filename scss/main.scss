@@ -12,7 +12,7 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  @include fonts;
   line-height: 1.5;
 }
 
@@ -77,8 +77,12 @@ header {
   @include linkedInAnimation;
 }
 
+.fa-github {
+  color: $github-default;
+}
+
 .fa-github:hover {
-  color: white;
+  @include gitHubAnimation;
 }
 
 main {

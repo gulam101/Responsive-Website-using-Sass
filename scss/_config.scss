@@ -12,6 +12,12 @@ $facebook-default: #3b5998;
 $facebook-hover:  #3b5998;
 $linkedIn-default: white;
 $linkedIn-hover:  #0e76a8;
+$github-default: #59bfff;
+$github-hover: white;
+
+@mixin fonts {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 // For JS Animation
 
@@ -67,6 +73,11 @@ $linkedIn-hover:  #0e76a8;
 
 @mixin linkedInAnimation {
   color: $linkedIn-hover;
+  transition: ease-in-out;
+}
+
+@mixin gitHubAnimation {
+  color: $github-hover;
   transition: ease-in-out;
 }
 
