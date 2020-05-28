@@ -133,7 +133,8 @@
 }
 
 .menu .nav-item.current > a {
-  color: red;
+  color: #3c78d8;
+  font-size: 35px;
 }
 
 * {
@@ -147,6 +148,7 @@ body {
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
   line-height: 1.5;
 }
 
@@ -154,6 +156,8 @@ body#bg-img {
   background: url(../dist/img/background.jpg);
   background-attachment: fixed;
   background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
 }
 
 body#bg-img .overlay {
@@ -190,10 +194,6 @@ header {
   position: fixed;
   z-index: 2;
   width: 100%;
-}
-
-.fa {
-  color: black;
 }
 
 .fa-twitter {

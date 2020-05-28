@@ -7,6 +7,7 @@
     cursor: pointer;
     @include easeOut;
 
+
     .btn-line {
         width: 28px;
         height: 3px;
@@ -37,6 +38,7 @@
         }
     }
 }
+
 
 // Menu Overlay
 .menu {
@@ -88,7 +90,8 @@
     
         &.current > a {
             // Hightlights the menu page colour on anchor
-          color: red;
+          color: $current-selection;
+          font-size: 35px;
         }
       }
     

@@ -5,6 +5,7 @@ $primary-color: #444;
 $show-home-image: true;
 $home-image: url(../dist/img/background.jpg);
 $background-opacity: 0.5;
+$current-selection: #3c78d8;
 
 $twitter-defult: #4682B4;
 $twitter-hover: #1DA1F2;
@@ -17,10 +18,10 @@ $github-hover: white;
 
 @mixin fonts {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
 }
 
 // For JS Animation
-
 .ml1 {
     font-weight: 900;
     font-size: 92px;
@@ -87,6 +88,7 @@ $github-hover: white;
             background: $home-image;
             background-attachment: fixed;
             background-size: cover;
+            @include fonts;
             
             .overlay {
                 position: absolute;
