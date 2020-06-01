@@ -309,6 +309,15 @@ main#home h1 {
   border-bottom: red 5px solid;
 }
 
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container > p {
+  font-size: 20px;
+}
+
 .projects {
   display: -ms-grid;
   display: grid;

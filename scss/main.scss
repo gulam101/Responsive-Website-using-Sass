@@ -144,6 +144,14 @@ main {
   }
 }
 
+.container {
+  @include about-style();
+}
+
+.container > p {
+  font-size: 20px;
+}
+
 // Work/Projects
 .projects {
   display: grid;
