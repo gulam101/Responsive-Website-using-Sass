@@ -62,6 +62,10 @@ $github-hover: white;
     transition: all 0.5s ease-in;
 }
 
+@mixin ease-In-Out {
+  transition: ease-in-out 550ms;
+}
+
 @mixin twitterAnimation {
     color: $twitter-hover;
     transition: ease-in-out;
