@@ -21,11 +21,15 @@ $github-hover: white;
   color: white;
 }
 
+@mixin about-fonts {
+  color: black;
+}
+
 // For JS Animation
 .ml1 {
     font-weight: 900;
     font-size: 92px;
-    color: #3D4849;
+    color: #ffffff;
   }
   
   .ml1 .letter {
@@ -89,6 +93,11 @@ $github-hover: white;
 @mixin about-style {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@mixin underline-effect {
+  text-decoration: underline;
+  transition: ease-in-out;
 }
 
 @mixin background {

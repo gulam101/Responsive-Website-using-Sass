@@ -1,7 +1,7 @@
 .ml1 {
   font-weight: 900;
   font-size: 92px;
-  color: #3D4849;
+  color: #ffffff;
 }
 
 .ml1 .letter {
@@ -338,6 +338,10 @@ main#home h1 {
   transition: all 0.5s ease-in;
 }
 
+.about-colour {
+  color: black;
+}
+
 .boxes {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -400,5 +404,11 @@ main#home h1 {
   background: #2b2b2b;
   color: set-text-color(#444);
   height: 60px;
+}
+
+b:hover {
+  text-decoration: underline;
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
 }
 /*# sourceMappingURL=main.css.map */

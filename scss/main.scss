@@ -170,6 +170,10 @@ main {
   }
 }
 
+.about-colour {
+  @include about-fonts();
+}
+
 // Contact Page
 .boxes {
   display: flex;
@@ -228,6 +232,9 @@ main {
   height: 60px;
 }
 
+b:hover {
+  @include underline-effect();
+}
 
 
 // @import 'mobile';
