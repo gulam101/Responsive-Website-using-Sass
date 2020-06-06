@@ -18,7 +18,7 @@
 
     // Rotate Into X With menu Lines
     &.close {
-        transform: rotate(180deg);
+        transform: rotate(720deg);
 
     .btn-line {
         // Line 1 - Rotate
@@ -70,22 +70,35 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        transform: translate3d(0, -100%, 0);
+        transform: translate3d(0,-100%,0);
         @include easeOut;
 
         &.show {
             // Slide in from top
-            transform: translate3d(0, 0, 0);
+            transform: translate3d(0,0,0);
         }
     }
 
+    // Branding slide
+    &-branding {
+        background-color: $primary-color;
+        transform: translate3d(0,100%,0);
+        @include easeOut;
+
+        &.show {
+            // Slide in from bottom
+            transform: translate3d(0,0,0)
+        }
+    }
+
+
     .nav-item {
-        transform: translate3d(600px, 0, 0);
+        transform: translate3d(600px,0,0);
         @include easeOut;
     
         &.show {
           // Slide in from right
-          transform: translate3d(0, 0, 0);
+          transform: translate3d(0,0,0);
         }
     
         &.current > a {

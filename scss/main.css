@@ -56,8 +56,8 @@
 }
 
 .menu-btn.close {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(720deg);
+          transform: rotate(720deg);
 }
 
 .menu-btn.close .btn-line:nth-child(1) {
@@ -116,6 +116,19 @@
 }
 
 .menu-branding.show, .menu-nav.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.menu-branding {
+  background-color: #444;
+  -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.menu-branding.show {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
